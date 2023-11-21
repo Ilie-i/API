@@ -2,7 +2,6 @@ import sqlite3
 conn = sqlite3.connect("Movies.db")
 curs = conn.cursor()
 
-'''
 # Creating the DB
 curs.execute("""CREATE TABLE Movies(
     id integer PRIMARY KEY,
@@ -28,4 +27,3 @@ with dst:
     src.backup(dst, pages=1)
 dst.close()
 src.close()
-'''
